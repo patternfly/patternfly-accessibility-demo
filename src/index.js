@@ -10,7 +10,10 @@ require('dg-angular-patternfly-accessible/angular-patternfly');
 var routesConfig = require('./routes');
 
 var main = require('./app/main');
-var lions = require('./app/lions/lions');
+var endangeredSpecies = require('./app/animals/endangeredSpecies');
+var pets = require('./app/animals/pets');
+var extinctAnimals = require('./app/animals/extinctAnimals');
+var wildAnimals = require('./app/animals/wildAnimals');
 
 require('./index.css');
 require('patternfly/dist/css/patternfly.css');
@@ -20,4 +23,7 @@ angular
   .module('app', [menuModule, 'ui.router', 'patternfly.navigation', 'ui.bootstrap'])
   .config(routesConfig)
   .component('app', main)
-  .component('lions', lions);
+  .component('endangeredSpecies', endangeredSpecies)
+  .component('pets', pets)
+  .component('extinctAnimals', extinctAnimals)
+  .component('wildAnimals', wildAnimals);
