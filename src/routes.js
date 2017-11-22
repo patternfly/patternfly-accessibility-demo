@@ -10,8 +10,20 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
       url: '/',
       component: 'app'
     })
-    .state('app.lions', {
-      url: 'lions',
-      component: 'lions'
+    .state('app.wild-animals', {
+      url: 'wild-animals',
+      component: 'wildAnimals'
+    })
+    .state('app.pets', {
+      url: 'pets',
+      component: 'pets'
+    })
+    .state('app.endangered-species', {
+      url: 'endangered-species',
+      component: 'endangeredSpecies'
+    })
+    .state('app.dodos', {
+      url: 'dodos',
+      component: 'extinctAnimals'
     });
 }
