@@ -14,6 +14,13 @@ var endangeredSpecies = require('./app/animals/endangeredSpecies');
 var pets = require('./app/animals/pets');
 var extinctAnimals = require('./app/animals/extinctAnimals');
 var wildAnimals = require('./app/animals/wildAnimals');
+var articleSummary = require('./app/animals/articleSummary');
+var articleFull = require('./app/animals/articleFull');
+var articleWolves = require('./app/animals/articleWolves');
+var articleSharks = require('./app/animals/articleSharks');
+
+
+
 
 require('./index.css');
 require('patternfly/dist/css/patternfly.css');
@@ -27,3 +34,7 @@ angular
   .component('pets', pets)
   .component('extinctAnimals', extinctAnimals)
   .component('wildAnimals', wildAnimals);
+  .component('articleWolves', articleWolves);
+  .component('articleSharks', articleSharks);
+  .component('articleFull', articleFull);
+  .component('articleSummary', articleSummary);

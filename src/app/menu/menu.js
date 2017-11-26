@@ -14,22 +14,22 @@ function TechsController() {
       children: [
         {
           title: 'Environment Science',
-          uiSref: 'app'
+          uiSref: 'app.article-summary'
         }, {
           title: 'Physical Science',
-          uiSref: 'app'
+          uiSref: 'app.article-summary'
         }, {
           title: 'Innovation',
-          uiSref: 'app'
+          uiSref: 'app.article-summary'
         }, {
           title: 'Life Science',
-          uiSref: 'app'
+          uiSref: 'app.article-summary'
         }, {
           title: 'Engineering',
-          uiSref: 'app'
+          uiSref: 'app.article-summary'
         }, {
           title: 'Science vs. Myth',
-          uiSref: 'app'
+          uiSref: 'app.article-summary'
         }
       ]
     }, {
@@ -38,16 +38,16 @@ function TechsController() {
       children: [
         {
           title: 'Home Improvement',
-          uiSref: 'app'
+          uiSref: 'app.article-summary'
         }, {
           title: 'Lawn & Garden',
-          uiSref: 'app'
+          uiSref: 'app.article-summary'
         }, {
           title: 'Stain Removal',
-          uiSref: 'app'
+          uiSref: 'app.article-summary'
         }, {
           title: 'Green Living',
-          uiSref: 'app'
+          uiSref: 'app.article-summary'
         }
       ]
     }, {
@@ -56,10 +56,10 @@ function TechsController() {
       children: [
         {
           title: 'Computers',
-          uiSref: 'app'
+          uiSref: 'app.article-summary'
         }, {
           title: 'Electronics',
-          uiSref: 'app'
+          uiSref: 'app.article-summary'
         }
       ]
     }, {
@@ -86,10 +86,10 @@ function TechsController() {
       children: [
         {
           title: 'History',
-          uiSref: 'app'
+          uiSref: 'app.article-summary'
         }, {
           title: 'People',
-          uiSref: 'app'
+          uiSref: 'app.article-summary'
         }
       ]
     }
