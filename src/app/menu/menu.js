@@ -95,7 +95,7 @@ function TechsController($rootScope, $scope) {
     }
   ];
 
-  let listener = $rootScope.$on('$stateChangeSuccess', function () {
+  var listener = $rootScope.$on('$stateChangeSuccess', function () {
     // eslint-disable-next-line angular/document-service
     var element = document.getElementById('container');
     if (element) {
