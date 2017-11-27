@@ -25,22 +25,21 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     .state('app.dodos', {
       url: 'dodos',
       component: 'extinctAnimals'
-    });
+    })
     .state('app.article-summary', {
       url: 'article-summary',
       component: 'articleSummary'
-    });
+    })
     .state('app.article-full', {
       url: 'article-full',
       component: 'articleFull'
-    });
+    })
     .state('app.article-wolves', {
       url: 'article-wolves',
       component: 'articleWolves'
-    });
+    })
     .state('app.article-sharks', {
       url: 'article-sharks',
       component: 'articleSharks'
     });
-
 }

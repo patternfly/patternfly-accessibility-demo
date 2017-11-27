@@ -4,7 +4,7 @@ module.exports = {
 };
 
 /** @ngInject */
-function TechsController() {
+function TechsController($rootScope, $scope) {
   var vm = this;
 
   vm.navigationItems = [
@@ -94,4 +94,14 @@ function TechsController() {
       ]
     }
   ];
+
+  let listener = $rootScope.$on('$stateChangeSuccess', function () {
+    // eslint-disable-next-line angular/document-service
+    var element = document.getElementById('container');
+    if (element) {
+      element.focus();
+    }
+  });
+
+  $scope.$on('$destroy', listener);
 }
