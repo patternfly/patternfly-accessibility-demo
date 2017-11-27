@@ -1,6 +1,7 @@
-<pf-vertical-navigation items="$ctrl.navigationItems" brand-alt="ANGULAR PATTERNFLY"
+<pf-vertical-navigation items="$ctrl.navigationItems" brand-alt="How Stuff Works"
                         show-badges="true" pinnable-menus="true" update-active-items-on-click="true">
-  <div>
+  <a class="skiplink-pf btn btn-primary" href="#main">Skip to main content</a>
+  <!-- <div>
     <ul class="nav navbar-nav navbar-right navbar-iconic">
       <li class="dropdown">
       </li>
@@ -25,8 +26,8 @@
         </ul>
       </li>
     </ul>
-  </div>
+  </div> -->
 </pf-vertical-navigation>
-<div class="techs">
+<div class="techs container-fluid container-cards-pf container-pf-nav-pf-vertical">
   <ui-view></ui-view>
 </div>

@@ -85,12 +85,12 @@ a:hover {
   font-weight: 300;
   font-size: 1.5rem;
 }
-.techs {
+/*.techs {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-}
+}*/
 
 .tech {
   height: 15rem;
