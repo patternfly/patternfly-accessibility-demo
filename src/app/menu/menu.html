@@ -1,32 +1,38 @@
 <pf-vertical-navigation items="$ctrl.navigationItems" brand-alt="How Stuff Works"
-                        show-badges="true" pinnable-menus="true" update-active-items-on-click="true">
-  <a class="skiplink-pf btn btn-primary" href="#main">Skip to main content</a>
-  <!-- <div>
-    <ul class="nav navbar-nav navbar-right navbar-iconic">
-      <li class="dropdown">
-      </li>
-      <li class="dropdown">
-        <a class="dropdown-toggle nav-item-iconic" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          <span title="Help" class="fa pficon-help"></span>
-          <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-          <li><a href="#">Help</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a class="dropdown-toggle nav-item-iconic" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          <span title="Username" class="fa pficon-user"></span>
-          <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-          <li><a href="#">Preferences</a></li>
-          <li><a href="#">Logout</a></li>
-        </ul>
-      </li>
+                        show-badges="true" pinnable-menus="true" update-active-items-on-click="true" use-touch-screen="$ctrl.touchScreenEnabled">
+  <button class="skiplink-pf btn btn-primary" ng-click="$ctrl.scrollToMain()" tabindex="0">Skip to main content</button>
+
+  <div>
+    <ul class="nav navbar-nav">
+      <li><button id="hideVerticalNav" ng-click="$ctrl.toggleTouchScreen()" class="toggle-button">Use Touchscreen Mode</button></li>
+      <li class="toggle-button"><span class="touch-enabled">Touch Screen Enabled: {{$ctrl.touchScreenEnabled}}</span></li>
     </ul>
-  </div> -->
+    <!---->
+    <!--<ul class="nav navbar-nav navbar-right navbar-iconic">-->
+      <!--<li class="dropdown">-->
+      <!--</li>-->
+      <!--<li class="dropdown">-->
+        <!--<a class="dropdown-toggle nav-item-iconic" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
+          <!--<span title="Help" class="fa pficon-help"></span>-->
+          <!--<span class="caret"></span>-->
+        <!--</a>-->
+        <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">-->
+          <!--<li><a href="#">Help</a></li>-->
+          <!--<li><a href="#">About</a></li>-->
+        <!--</ul>-->
+      <!--</li>-->
+      <!--<li class="dropdown">-->
+        <!--<a class="dropdown-toggle nav-item-iconic" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
+          <!--<span title="Username" class="fa pficon-user"></span>-->
+          <!--<span class="caret"></span>-->
+        <!--</a>-->
+        <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">-->
+          <!--<li><a href="#">Preferences</a></li>-->
+          <!--<li><a href="#">Logout</a></li>-->
+        <!--</ul>-->
+      <!--</li>-->
+    <!--</ul>-->
+  </div>
 </pf-vertical-navigation>
 <div class="techs container-fluid container-cards-pf container-pf-nav-pf-vertical" tabindex="0" id="container">
   <ui-view></ui-view>

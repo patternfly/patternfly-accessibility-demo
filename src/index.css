@@ -114,3 +114,12 @@ a:hover {
 .navbar-brand-txt {
   line-height: 34px;
 }
+
+.toggle-button {
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+.touch-enabled {
+  color: white;
+}
