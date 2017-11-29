@@ -103,7 +103,7 @@ function TechsController($rootScope, $scope) {
     }
   });
 
-  vm.touchScreenEnabled = false;
+  vm.touchScreenEnabled = true;
 
   vm.toggleTouchScreen = function () {
     vm.touchScreenEnabled = !vm.touchScreenEnabled;
