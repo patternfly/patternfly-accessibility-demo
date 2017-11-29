@@ -103,5 +103,19 @@ function TechsController($rootScope, $scope) {
     }
   });
 
+  vm.touchScreenEnabled = false;
+
+  vm.toggleTouchScreen = function () {
+    vm.touchScreenEnabled = !vm.touchScreenEnabled;
+  };
+
+  vm.scrollToMain = function () {
+    // eslint-disable-next-line angular/document-service
+    var element = document.getElementById('container');
+    if (element) {
+      element.focus();
+    }
+  };
+
   $scope.$on('$destroy', listener);
 }
